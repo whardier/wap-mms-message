@@ -1,6 +1,8 @@
 WAP MMS Message Encoder
 =======================
 
+** WORK IN PROGRESS / NON-FUNCTIONAL **
+
 Extremely simple encoder for application/vnd.wap.mms-message payloads.
 
 This code is based on work done at 
