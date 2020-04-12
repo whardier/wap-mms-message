@@ -7,8 +7,8 @@ This code is based on work done at
 https://github.com/pmarti/python-messaging which in turn includes work 
 and concepts included from other sources like pysms and python-mms.
 
-Initial work will be done against Python 3.8 and slowly adapted to the 
-the 3.x series and slowly adapted to other Python 3.x versions.
+Initial work will be done against Python 3.8 and slowly adapted to other 
+Python 3.x versions.
 
 Features
 --------
