@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# ╻ ╻┏━┓┏━┓   ┏┳┓┏┳┓┏━┓   ┏┳┓┏━╸┏━┓┏━┓┏━┓┏━╸┏━╸   ┏━┓┏━╸╺┳╸╻ ╻┏━┓
+# ┃╻┃┣━┫┣━┛╺━╸┃┃┃┃┃┃┗━┓╺━╸┃┃┃┣╸ ┗━┓┗━┓┣━┫┃╺┓┣╸    ┗━┓┣╸  ┃ ┃ ┃┣━┛
+# ┗┻┛╹ ╹╹     ╹ ╹╹ ╹┗━┛   ╹ ╹┗━╸┗━┛┗━┛╹ ╹┗━┛┗━╸   ┗━┛┗━╸ ╹ ┗━┛╹
+
 # MIT License
 
 # Copyright (c) 2020 Shane R. Spencer
@@ -39,7 +43,7 @@ except ImportError:
 kwargs = {}
 
 # "Safe" version read
-with open("wap_mms_encoder/__init__.py") as f:
+with open("wap_mms_message/__init__.py") as f:
     ns = {}
     exec(f.read(), ns)
     kwargs["version"] = ns["version"]
@@ -51,18 +55,25 @@ if setuptools is not None:
     python_requires = ">= 3.8"
     kwargs["python_requires"] = python_requires
 
+
+# ┏━┓┏━╸╺┳╸╻ ╻┏━┓
+# ┗━┓┣╸  ┃ ┃ ┃┣━┛
+# ┗━┛┗━╸ ╹ ┗━┛╹
+
+
 setup(
-    name="wap_mms_encoder",
-    packages=["wap_mms_encoder"],
+    name="wap_mms_message",
+    packages=["wap_mms_message"],
     author="Shane R. Spencer",
     author_email="spencersr@gmail.com",
-    url="https://github.com/whardier/wap-mms-encoder",
+    url="https://github.com/whardier/wap-mms-message",
     license="MIT",
     project_urls={
         "Funding": "https://github.com/sponsors/whardier",
-        "Source": "https://github.com/whardier/wap-mms-encoder",
+        "Source": "https://github.com/whardier/wap-mms-message",
     },
-    description=("Extremely simple encoder for application/vnd.wap.mms-message payloads"),
+    description=(
+        "Extremely simple message for application/vnd.wap.mms-message payloads"),
     install_requires=[],
     classifiers=[
         "License :: OSI Approved :: MIT License",
